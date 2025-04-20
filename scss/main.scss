@@ -1,0 +1,19 @@
+// Base
+@import "./base/reset";
+@import "./base/mixins";
+@import "./base/base";
+@import "./base/container";
+
+// Blocks
+@import "./blocks/main";
+@import "./blocks/header";
+@import "./blocks/navigation";
+@import "./blocks/promo";
+@import "./blocks/products";
+@import "./blocks/cards";
+@import "./blocks/news";
+@import "./blocks/about";
+@import "./blocks/footer";
+@import "./blocks/arrow-up";
+@import "./blocks/mobile-nav";
+@import "./blocks/btns";

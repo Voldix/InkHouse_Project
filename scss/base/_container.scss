@@ -1,0 +1,25 @@
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+    width: 1140px;
+
+    @include tablet1 {
+        width: 720px;
+    }
+
+    @include tablet2 {
+        width: 540px;
+    }
+
+    @include mobile {
+        width: 320px;
+    }
+}
+
+.container--news {
+    padding: 70px 0;
+
+    @include tablet2 {
+        padding: 50px 0;
+    }
+}

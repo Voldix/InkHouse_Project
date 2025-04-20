@@ -1,0 +1,39 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:500,700);
+@import url(https://fonts.googleapis.com/css?family=Manrope:200,300,regular,500,600,700,800);
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #000;
+}
+
+.logo {
+    img {
+        width: 143px;
+        height: 35px;
+    }
+}
+
+.none {
+    display: none !important;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// убираем прокрутку, когда открыта мобильная навигация
+.no-scroll {
+    overflow-y: hidden;
+}

@@ -1,0 +1,37 @@
+/* Media */
+
+@mixin tablet1() {
+    @media (max-width: 1220px) {  /* +20px на скролл, что занимает сбоку */
+        @content;
+    }
+}
+
+@mixin tablet2() {
+    @media (max-width: 740px) {  /* +20px на скролл, что занимает сбоку */
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: 540px) { /* +20px на скролл, что занимает сбоку */
+        @content;
+    }
+}
+
+@mixin scrollTopMargin() {
+    scroll-margin-top: 70px;
+
+    @include tablet2 {
+        scroll-margin-top: 50px;
+    }
+
+    @include mobile {
+        scroll-margin-top: 60px;
+    }
+} 
+
+@mixin mediaBG() {
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        @content;
+    }
+}

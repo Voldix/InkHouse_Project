@@ -1,0 +1,42 @@
+/* Navigation */
+
+.header__nav {
+    // @include mobile {
+    //     display: none;
+    // }
+}
+
+.nav {
+    font-size: 20px;
+
+    @include tablet1 {
+        font-size: 18px;
+    }
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 60px;
+    align-items: center;
+}
+
+.nav__link {
+    color: #2c2d35;
+    transition: color .2s ease-in;
+
+    &:hover {
+        color: #598d66;
+    }
+
+    &:focus-visible {
+        outline: none;
+        background-color: #d4e8d9;
+        box-shadow: 0 0 0 5px #d4e8d9;
+    }
+
+    &:active {
+        color: #376b44;
+    }
+}
+
+

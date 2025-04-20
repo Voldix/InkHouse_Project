@@ -1,0 +1,68 @@
+.btn {
+    display: inline-block;
+    padding: 20px 60px;
+    border: 1px solid #598d66;
+
+    text-align: center;
+    font-size: 20px;
+    color: #598d66;
+
+    cursor: pointer;
+    transition: background-color .2s ease-in, color .2s ease-in, border .2s ease-in;
+
+    &:hover {
+        background-color: #598d66;
+        color: #f4f6f5;
+    }
+
+    &:focus-visible {
+        outline: none;
+        background-color: #d4e8d9;
+        border: 1px solid #598d66;
+    }
+
+    &:active {
+        background-color: #376b44;
+        color: #fff;
+    }
+
+    @include tablet2 {
+        font-size: 18px;
+    }
+}
+
+.promo__btn {
+
+    @include tablet1 {
+        padding: 18px 50px;
+    }
+
+    @include tablet2 {
+        padding: 15px 40px;
+    }
+
+    @include mobile {
+        padding: 14px 30px;
+    }
+}
+
+.card__btn {
+    width: 310px;
+
+    &:focus-visible {
+        border: 1px solid #52835e;
+    }
+
+    @include tablet1 {
+        width: 290px;
+    }
+
+    @include tablet2 {
+        padding: 14px 0;
+        width: 200px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}

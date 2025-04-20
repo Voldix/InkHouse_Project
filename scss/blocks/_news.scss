@@ -1,0 +1,138 @@
+/* New collection */
+
+.news {
+    background-image: url("../img/news/new.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include tablet1 {
+        background-image: url("./../img/news/tablet1.jpg");
+
+        @include mediaBG {
+            background-image: url("./../img/news/tablet1@2x.jpg");
+        }
+    }
+
+}
+.news__wrapper {
+    width: 540px;
+
+    @include tablet1 {
+        width: auto;
+    }
+}
+
+.news__title {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+
+    @include tablet1 {
+        margin-bottom: 30px;
+    }
+
+    @include tablet2 {
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 1;
+        color: #f4f6f5;
+
+        @include tablet1 {
+            font-size: 30px;
+            width: 370px;
+        }
+
+        @include tablet2 {
+            font-size: 24px;
+            width: 261px;
+        }
+
+        @include mobile {
+            width: unset;
+        }
+    }
+
+    img {
+        @include tablet1 {
+            width: 60px;
+            height: 60px;
+        }
+
+        @include tablet2 {
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.news__text {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #fff;
+
+    p + p {
+        margin-top: 20px;
+
+        @include tablet2 {
+            margin-top: 16px;
+        }
+    }
+
+    @include tablet1 {
+        margin-bottom: 30px;
+    }
+
+    @include tablet2 {
+        margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    @include mobile {
+        margin-bottom: 30px;
+    }
+}
+
+.news__btn button {
+    display: inline-block;
+    padding: 20px 60px;
+    background-color: #eedb6d;
+    border: 1px solid transparent;
+
+    font-size: 20px;
+    color: #2c2d35;
+    cursor: pointer;
+
+    transition: background-color .2s ease-in, border .2s ease-in;
+
+    &:hover {
+        background-color: #faeb97;
+    }
+
+    &:focus-visible {
+        border: 1px solid #a38314;
+        background-color: #faeb97;
+    }
+
+    &:active {
+        background-color: #d9b949;
+    }
+
+    @include tablet1 {
+        padding: 18px 36px;
+    }
+
+    @include tablet2 {
+        padding: 14px 30px;
+        font-size: 18px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+}
